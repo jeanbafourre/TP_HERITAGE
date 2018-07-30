@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Book {
 
-    public String getTitre() {
+	public String getTitre() {
 		return titre;
 	}
 
@@ -49,29 +49,27 @@ public class Book {
 	}
 
 	public Book() {
-    }
+	}
 
-    public String titre;
+	public String titre;
 
-    public String auteur;
+	public String auteur;
 
-    public String editeur;
+	public String editeur;
 
-    public int annee;
+	public int annee;
 
-    public String type;
+	public String type;
 
-    public boolean booked;
+	public boolean booked;
 
-    public boolean isBooked() {
-    	if(booked == true) {
-    		System.out.println("Ce livre est emprunté");
-    	}
-    	else {
-    		System.out.println("Ce livre n'est pas emprunté");
-    	}
-  
-        return false;
-    }
+	public String isBooked() {
+		if(booked == true) {
+			return "Ce livre est emprunté";
+		}
+		else {
+			return "Ce livre n'est pas emprunté";
+		}
+	}
 
 }
